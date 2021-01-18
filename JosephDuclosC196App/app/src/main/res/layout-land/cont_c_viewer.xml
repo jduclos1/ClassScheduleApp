@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.jduclos1.myapplication.CourseActViewer"
+                tools:showIn="@layout/act_c_viewer">
+
+    <TextView
+        android:id="@+id/tvCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Course Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvCourseStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCourseName"
+        android:text="Start Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvCourseStart"
+            android:layout_below="@+id/tvCourseName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" - " />
+
+    <TextView
+        android:id="@+id/tvCourseEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCourseName"
+        android:layout_toRightOf="@id/textView11"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="End Date" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCourseName"
+        android:layout_alignLeft="@id/tvCourseName"
+        android:layout_below="@+id/tvCourseStart"
+        android:text="Planned" />
+
+    <TextView
+        android:id="@+id/tvCourseMentor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCourseName"
+        android:layout_below="@+id/tvStatus"
+        android:text="Course Mentor" />
+
+    <TextView
+        android:id="@+id/tvCourseMentorPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCourseName"
+        android:layout_below="@+id/tvCourseMentor"
+        android:text="Mentor Phone Number" />
+
+    <TextView
+        android:id="@+id/tvCourseMentorEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCourseName"
+        android:layout_below="@+id/tvCourseMentorPhone"
+        android:text="Mentor Email" />
+
+    <GridLayout
+        android:layout_width="263dp"
+        android:layout_height="149dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvCourseName"
+        android:layout_marginEnd="42dp">
+
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="134dp"
+            android:layout_height="125dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@color/buttonBacks"
+            android:onClick="openClassNotesList"
+            android:padding="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/notes36" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="0dp"
+            android:layout_row="1"
+            android:onClick="openClassNotesList"
+            android:text="@string/notes"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="133dp"
+            android:layout_height="124dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:backgroundTint="@color/buttonBacks"
+            android:onClick="openAssessments"
+            android:padding="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/assess" />
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="0dp"
+            android:layout_row="1"
+            android:onClick="openAssessments"
+            android:text="Assessments"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </GridLayout>
+
+</RelativeLayout>

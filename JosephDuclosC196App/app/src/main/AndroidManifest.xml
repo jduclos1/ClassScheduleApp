@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.jduclos1.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/calendar_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!-- DB Provider -->
+        <provider
+            android:name="com.example.jduclos1.myapplication.DataProv"
+            android:authorities="com.example.jduclos1.myapplication.dataprov"
+            android:exported="true" />
+
+        <!-- Alarm Provider -->
+        <receiver android:name="com.example.jduclos1.myapplication.Alarm" />
+
+        <!-- Activities -->
+        <activity
+            android:name="com.example.jduclos1.myapplication.Main"
+            android:label="@string/main_title"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.TermActList"
+            android:label="@string/t_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.Main" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.TermActViewer"
+            android:label="@string/t_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.TermActList" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.TermActEditor"
+            android:label="@string/t_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.TermActViewer" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.CourseActList"
+            android:label="Course List"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.TermActViewer" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.CourseActViewer"
+            android:label="@string/c_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.CourseActList" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.CourseActEditor"
+            android:label="@string/c_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.CourseActViewer" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.CourseNoteActList"
+            android:label="@string/c_note_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.CourseActViewer" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.AssessmentActList"
+            android:label="@string/a_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.CourseActViewer" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.AssessmentActViewer"
+            android:label="@string/a_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.AssessmentActList" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.CourseNoteActViewer"
+            android:label="@string/c_note_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.CourseNoteActList" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.AssessmentNoteActList"
+            android:label="@string/a_note_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.AssessmentActViewer" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.AssessmentNoteActViewer"
+            android:label="@string/a_note_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.AssessmentNoteActList" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.AssessmentActEditor"
+            android:label="@string/a_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.AssessmentActViewer" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.CourseNoteActEditor"
+            android:label="@string/c_note_editor"
+            android:parentActivityName="com.example.jduclos1.myapplication.CourseNoteActList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.CourseNoteActList" />
+        </activity>
+        <activity
+            android:name="com.example.jduclos1.myapplication.AssessmentNoteActEditor"
+            android:label="@string/a_note_editor"
+            android:parentActivityName="com.example.jduclos1.myapplication.AssessmentActList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jduclos1.myapplication.AssessmentActList" />
+        </activity>
+    </application>
+
+</manifest>

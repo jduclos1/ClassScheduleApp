@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".CourseActViewer">
+    <item
+        android:id="@+id/drop_course"
+        android:orderInCategory="102"
+        android:title="@string/drop_course" />
+    <item
+        android:id="@+id/course_completed"
+        android:orderInCategory="105"
+        android:title="@string/course_completed" />
+    <item
+        android:id="@+id/start_course"
+        android:orderInCategory="101"
+        android:title="@string/start_course" />
+    <item
+            android:id="@+id/enable_notifications"
+            android:orderInCategory="106"
+            android:title="@string/enable_notifications"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/disable_notifications"
+            android:orderInCategory="107"
+            android:title="@string/disable_notifications"
+            app:showAsAction="never" />
+
+    <item
+        android:id="@+id/edit_course"
+        android:orderInCategory="103"
+        android:title="@string/edit_course" />
+    <item
+        android:id="@+id/del_course"
+        android:orderInCategory="104"
+        android:title="@string/del_course" />
+
+</menu>

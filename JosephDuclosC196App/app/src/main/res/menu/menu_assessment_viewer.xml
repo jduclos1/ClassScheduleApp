@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".AssessmentActViewer">
+    <item
+            android:id="@+id/del_assess"
+            android:orderInCategory="100"
+            android:title="@string/del_assess"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/enable_notifications"
+            android:orderInCategory="101"
+            android:title="@string/enable_notifications"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/disable_notifications"
+            android:orderInCategory="102"
+            android:title="@string/disable_notifications"
+            app:showAsAction="never" />
+</menu>

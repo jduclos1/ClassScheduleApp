@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Course Tracker App</string>
+    <string name="main_title">Course Tracker App</string>
+    <string name="t_list">Term List</string>
+    <string name="t_viewer">Term Viewer</string>
+    <string name="t_editor">Term Editor</string>
+    <string name="c_list">Course List</string>
+    <string name="c_viewer">Course Viewer</string>
+    <string name="c_editor">Course Editor</string>
+    <string name="c_note_list">Course Note List</string>
+    <string name="a_list">Assessment List</string>
+    <string name="a_viewer">Assessment Viewer</string>
+    <string name="c_note_viewer">Course Note Viewer</string>
+    <string name="a_note_list">Assessment Note List</string>
+    <string name="a_note_viewer">Assessment Note Viewer</string>
+    <string name="a_editor">Assessment Editor</string>
+    <string name="c_note_editor">Course Note Editor</string>
+    <string name="a_note_editor">Assessment Note Editor</string>
+    <string name="del_note">Delete Note</string>
+    <string name="share_note">Share Note</string>
+    <string name="all_terms_deld">All terms have been deleted</string>
+    <string name="confirm_del_all_terms">Are you sure you want to delete all terms?</string>
+    <string name="test_alarm">Test alarm has been set for 5 seconds from now</string>
+    <string name="notes">Notes</string>
+    <string name="edit_course">Edit Course</string>
+    <string name="del_course">Delete Course</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="disable_notifications">Disable Notifications</string>
+    <string name="start_course">Start Course</string>
+    <string name="course_completed">Course completed</string>
+    <string name="drop_course">Drop Course</string>
+    <string name="course_deld">Course Has Been deleted</string>
+    <string name="confirm_del_course">Are you sure you wish to delete this course?</string>
+    <string name="add_new_course">Add New Course</string>
+    <string name="edit_course_title">Edit Course</string>
+    <string name="course_name">Course Name:</string>
+    <string name="course_start">Course Start:</string>
+    <string name="course_end">Course End:</string>
+    <string name="course_mentor">Course Mentor:</string>
+    <string name="course_mentor_phone">Course Mentor Phone:</string>
+    <string name="course_mentor_email">Course Mentor Email:</string>
+    <string name="save_course">Save Course</string>
+    <string name="courses">Courses</string>
+    <string name="no_active_term_set">No active term has been set, please set a term to active.</string>
+    <string name="start_date">Start Date:  </string>
+    <string name="end_date">End Date: </string>
+    <string name="classes">Classes</string>
+    <string name="view_term">View Term</string>
+    <string name="create_example">Create example data</string>
+    <string name="create_test_alarm">Create test alarm</string>
+    <string name="del_all_terms">Delete all terms</string>
+    <string name="activate_term">Mark term as active</string>
+    <string name="edit_term">Edit Term</string>
+    <string name="term_deld">Term Deleted</string>
+    <string name="term_marked_active">This term has been marked as active</string>
+    <string name="term_del">Delete Term</string>
+    <string name="del_term">Delete Term</string>
+    <string name="need_to_remove_courses">This term still contains courses, please remove all courses before deleting the
+        term.
+    </string>
+    <string name="confirm_del_term">Are you sure you wish to delete this term?</string>
+    <string name="term_name">Term Title: </string>
+    <string name="save_term">Save Term</string>
+    <string name="add_new_term">Add New Term</string>
+    <string name="edit_term_title">Edit Term</string>
+    <string name="term_saved">Term Saved</string>
+    <string name="term_updated">Term Updated</string>
+    <string name="too_many">You have too many course entered this term.</string>
+
+
+
+
+
+
+
+
+
+    <string name="long_test_note">I was not paying attention!\n\n
+        This is the Avengers Storyline instead:\n\n
+        As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.\n\n </string>
+    <string name="enter_new_note">Enter New Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="note_text_hint">Enter note text here...</string>
+    <string name="save_note">Save Note</string>
+    <string name="view_course_note">View Course Note</string>
+    <string name="view_images">View Images</string>
+    <string name="add_image">Add Image</string>
+    <string name="note_deld">Note Deleted</string>
+    <string name="confirm_del_note">Confirm Delete Note</string>
+    <string name="del_assess">Delete Assessment</string>
+    <string name="del_assess_note">Delete Assessment Notes?</string>
+    <string name="assessment_deld">Assessment Deleted</string>
+    <string name="confirm_del_assessment">Are you sure you wish to delete this assessment?</string>
+    <string name="new_assessment">New Assessment</string>
+    <string name="edit_assessment">Edit Assessment</string>
+    <string name="save_assessment">Save Assessment</string>
+    <string name="view_assessment_note">View Assessment Note</string>
+    <string name="current_term">Current Term</string>
+    <string name="view_all_terms">View All Terms</string>
+    <string name="code">Code</string>
+    <string name="name">Name</string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="description">Description</string>
+
+</resources>

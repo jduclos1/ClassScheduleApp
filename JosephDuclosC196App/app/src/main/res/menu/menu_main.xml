@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main">
+    <item
+        android:id="@+id/create_example"
+        android:orderInCategory="100"
+        android:title="@string/create_example"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/create_test_alarm"
+        android:orderInCategory="100"
+        android:title="@string/create_test_alarm"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/del_all_terms"
+        android:orderInCategory="101"
+        android:title="@string/del_all_terms"
+        app:showAsAction="never" />
+</menu>
